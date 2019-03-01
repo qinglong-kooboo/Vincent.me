@@ -1,0 +1,52 @@
+.post-page {
+  width: 60%;
+  min-height: calc(100vh - 60px);
+  margin: 0 auto;
+  padding-top: 60px;
+  background-color: #ffffff;
+  overflow: hidden;
+  .post {
+    padding: 32px;
+    .user-message {
+      .user-avatar  {
+        box-shadow: 0 1px 3px rgba(248, 65, 65, 0.1);
+        border-radius: 10%;
+        width: 48px;
+        height: 48px;
+        float: left;
+      }
+      .user-name {
+        font-size: 18px;
+        height: 48px;
+        line-height: 48px;
+        margin-left: 32px;
+      }
+    }
+    .post-message {
+      min-height: 106px;
+      margin: 20px auto;
+      border-radius: 5px;
+      .post-title {
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+      }
+      .post-content {
+        text-indent: 32px;
+        line-height: 24px;
+      }
+    }
+    .view-times,
+    .comments-count {
+      font-size: 14px;
+      float: right;
+      margin-left: 10px;
+      color: #0084ff;
+    }
+    .comments-count {
+      cursor: pointer;
+    }
+  }
+}
+

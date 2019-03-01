@@ -1,0 +1,87 @@
+.register {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: url(../image/sign_bg.png);
+  background-repeat: no-repeat;
+  background-color: #b8e5f8;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.register-form {
+  width: 380px;
+  margin: 100px auto 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  background-color: #ffffff;
+  padding: 48px;
+  font-size: 16px;
+
+  .register-username,
+  .register-password,
+  .register-repassword {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    input {
+      text-indent: 16px;
+      width: 100%;
+      padding: 5px 0;
+      margin-bottom: 5px;
+      border: none;
+      border-bottom: 1px solid #ebebeb;
+      font-size: 16px;
+      color: #1a1a1a;
+    }
+  }
+
+  .register-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    background-image: url(../image/avatar.png);
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -24px;
+    input {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      opacity: 0;
+      width: 48px;
+      height: 100%;
+      margin-left: -24px;
+      cursor: pointer;
+    }
+  }
+
+  .register-button {
+    border: 1px solid #0084ff;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #ffffff;
+    display: block;
+    background-color: #0084ff;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #0077e6;
+    }
+  }
+  .error-message {
+    color: red;
+    float: left;
+    font-size: 12px;
+  }
+  .display-error-message {
+    display: inline-block;
+  }
+}

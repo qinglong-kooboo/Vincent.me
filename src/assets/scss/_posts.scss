@@ -1,0 +1,52 @@
+.posts-list-li {
+  display: block;
+  margin-bottom: 20px;
+  overflow: hidden;
+  .user-message {
+    .user-avatar  {
+      box-shadow: 0 1px 3px rgba(248, 65, 65, 0.1);
+      border-radius: 10%;
+      width: 36px;
+      height: 36px;
+      float: left;
+    }
+    .user-name {
+      height: 36px;
+      line-height: 36px;
+      margin-left: 32px;
+    }
+  }
+  .post-message {
+    min-height: 106px;
+    margin: 20px auto;
+    border-radius: 5px;
+    .post-title {
+      font-size: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      cursor: pointer;
+      &:hover {
+        color: #0084ff;
+      }
+    }
+    .post-content {
+      text-indent: 32px;
+      line-height: 24px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .view-times,
+  .comments-count {
+    font-size: 14px;
+    float: right;
+    margin-left: 10px;
+    color: #0084ff;
+  }
+  .comments-count {
+    cursor: pointer;
+  }
+}

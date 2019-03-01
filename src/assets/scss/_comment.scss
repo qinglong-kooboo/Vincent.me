@@ -1,0 +1,50 @@
+.comment {
+  width: 80%;
+  margin: 32px auto;
+  h2 {
+    padding: 10px 0;
+    border-bottom: 1px solid #0084ff;
+  }
+  .comments-list {
+    margin-top: 32px;
+    .comments-list-li {
+      padding: 0 32px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      .comment-delete {
+        float: right;
+      }
+      .user-avatar  {
+        box-shadow: 0 1px 3px rgba(248, 65, 65, 0.1);
+        border-radius: 10%;
+        width: 32px;
+        height: 32px;
+        float: left;
+      }
+      .user-name {
+        height: 32px;
+        line-height: 32px;
+        margin-left: 16px;
+      }
+      .comment-content {
+        margin: 16px 0 0 48px;
+      }
+    }
+  }
+  .comment-form {
+    padding: 0 32px;
+    textarea {
+      width: 100%;
+      text-indent: 16px;
+    }
+    input {
+      color: #ffffff;
+      padding: 5px 8px;
+      border: 1px solid #0084ff;
+      background-color: #0084ff;
+      &:hover {
+        background-color: #0077e6;
+      }
+    }
+  }
+}
